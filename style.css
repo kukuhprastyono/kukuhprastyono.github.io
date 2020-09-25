@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+body{
+overflow-x: hidden;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+}
+p,a{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    min-height: 16vh;
+}
+.container{
+    padding: .5rem 1.5rem;
+
+}
+a img{
+    max-width: 2.5rem;
+}
+header button{
+    border: 0px;
+    background-color: unset;
+}
+
+#benner{
+    background-color: rgb(185, 29, 29);
+    background-image: url(./asset/benner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 84vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}
+
+#benner h1{
+    color:white;
+    font-size: 2rem;
+}
+#benner p{
+    color:white;
+}
+#benner a{
+    color:white;
+    margin: 1rem 0rem;
+    padding: .2rem 1rem;
+    background-color: rgba(172, 34, 34, 0.774);
+    width: fit-content;
+    align-self: flex-end;
+}
+nav{
+    flex-direction: column;
+    display: flex;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    transform: translateX(100%);
+    transition: all .6s ease-in-out;
+}
+nav.slide{
+    transform: translateX(0%);
+
+}
+nav a{
+    padding: .8rem 0px;
+    
+}
+#hamburger{
+    width: 60px;
+    height: 45px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+#hamburger span{
+    display: block;
+    position: absolute;
+    height: 9px;
+    width: 100%;
+    background: #abcdee;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+#hamburger span:nth-child(1){
+    top:0px;
+}
+#hamburger span:nth-child(2){
+    top:18px;
+}
+#hamburger span:nth-child(3){
+    top:36px
+}

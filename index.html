@@ -4,8 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SMK Negeri 2 Klaten</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="asset/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="asset/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="asset/favicon/favicon-16x16.png">
+    <link rel="manifest" href="asset/favicon/site.webmanifest">
+    <link rel="mask-icon" href="asset/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-   <h1>kukuh</h1>
+    <header class="container">
+        <a href="#" aria-label="Home">
+            <img src="./asset/Logo_SMK_Negeri_2_Klaten.png" alt="">
+        </a>
+        <div id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!-- <i id="hamburger" onclick="myFunction(this)" class="fas fa-2x fa-bars" aria-hidden="true"></i> -->
+        <!-- <i id="hamburger-close" class="fas fa-2x fa-times" aria-hidden="true" ></i> -->
+        
+    </header>
+    <nav id="navbar" class="container " >
+        <a href="#">profile</a>
+        <a href="#">jurusan</a>
+        <a href="#">loker</a>
+        <a href="#">PMB</a>
+    </nav>
+    <main>
+        <section id="benner" class="container">
+            <h1>Belum menemukan minat dan bakat?</h1>
+            <p>Klik link dibawah ini untuk mengikuti tes minat dan bakat!</p>
+            <a href="#">Ikuti <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/dafa13acb4.js" crossorigin="anonymous"></script>
+    <script>
+        const hamburger = document.querySelector('#hamburger');
+        const navbar = document.querySelector('nav');
+        hamburger.addEventListener('click', function() {
+            navbar.classList.toggle('slide');
+        });
+        function myFunction(x) {
+        x.classList.toggle("fa-times");
+        };
+    </script> 
 </body>
 </html>
